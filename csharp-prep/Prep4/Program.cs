@@ -44,6 +44,9 @@ class Program
         }
 
         Console.WriteLine($"The max is: {max}");
+        
+
+        
     }
 }
 }

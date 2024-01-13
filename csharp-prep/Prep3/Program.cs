@@ -10,10 +10,15 @@ class Program
 
         int guess = -1;
 
+        int chances = 0;
+
         while (guess != magicNumber)
         {
+           
             Console.Write("What is your guess? ");
             guess = int.Parse(Console.ReadLine());
+
+            chances++; 
 
             if (magicNumber > guess)
             {
@@ -23,10 +28,12 @@ class Program
             {
                 Console.WriteLine("Lower");
             }
-            else
+            else if (magicNumber == guess)
             {
                 Console.WriteLine("You guessed it!");
             }
+
+            Console.WriteLine($"You have used {chances} chances.");
 
         }                    
     
