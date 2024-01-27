@@ -1,3 +1,5 @@
+//Note that I have added a file with scriptures for the program to load there scriptures
+//They are in the scripture.txt file
 using System;
 
 class Program
