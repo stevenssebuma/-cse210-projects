@@ -1,17 +1,23 @@
 public class Assignment
 {
-    private string _studentName = "";
+    private string _name = "";
     private string _topic = "";
 
-    public Assignment(string studentName, string topic)
+    public string GetSummary()
     {
-        _studentName = studentName;
+        return $"{_name} - {_topic}";
+
+    }
+
+    public Assignment(string name, string topic)
+    {
+        _name = name;
         _topic = topic;
     }
     
     public string GetStudentName()
     {
-        return _studentName;
+        return _name;
     }
 
     public string GetTopic()
@@ -19,9 +25,5 @@ public class Assignment
         return _topic;
     }
     
-    public string GetSummary()
-    {
-        return $"{_studentName} - {_topic}";
-
-    }
+    
 }
