@@ -1,3 +1,4 @@
+//Note I added a method to save the Listings in a seperate file named 
 public class ListingActivity : Activity
 {
     private readonly Random random;
@@ -37,7 +38,7 @@ public class ListingActivity : Activity
         Console.Write("Enter the name of the file to save the items: ");
         string filename = Console.ReadLine();
         File.WriteAllLines(filename, items); // Save items to the specified file
-        Console.WriteLine($"\nYou listed {itemsCount} items. The items have been saved to the file '{filename}'.");
+        Console.WriteLine($"\nYou listed {itemsCount} items. The items have been saved to the file: {filename}.");
         DisplayEndingMessage(duration);
     }
 }
